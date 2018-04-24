@@ -1,0 +1,54 @@
+爬虫准备
+    参考资料
+        python网络数据采集
+        精通python爬虫框架scrapy
+        http://scrapy-chs.readthedocs.io/zh_CN/0.24/intro/tutorial.html
+        https://blog.csdn.net/c406495762/article/details/72858983
+    前提知识
+        url
+        http
+        web前端 html css js
+        ajax
+        re xpath
+        xml
+
+爬虫简介
+爬虫特征
+    1.自定义下载网页数据或者内容
+    2.自动在网络上流窜
+爬虫运作步骤
+    1.下载信息
+    2.提取正确的信息
+    3.根据自定义规则跳转其他页面执行1、2步骤
+爬虫的分类
+    1.通用爬虫
+    2.专用爬虫(聚焦爬虫)
+Python网络包简介
+    Python2.x
+        urllib\urllib2\urllib3\httplib\httplib2\requests
+    Python3.x
+        urllib
+            urllib.request 打开读取url
+            urllib.error 包含urllib.request常见错误，可以用try捕获
+            urllib.parse 包含解析url的方法
+            urllib.robotparser  解析robots.txt文件
+
+
+urllib.request 用于访问url的扩展库
+    urllib.request.urlopen(url, data=None, [timeout,]*, cafile=None, capath=None, cadefault=False, context=None)
+        1.url:打开URL，URL可以是字符串或Request对象
+        2.data=None:发送给服务端的数据，默认None
+        3.打开url使用HTTP/1.1,请求头包含Connection:close
+        4.timeout:连接超时时间，单位秒，对HTTP\HTTPS\FTP有效
+        5.context:描述SSL选项
+        6.cafile\capath:CA证书
+        7.cadefault:忽略
+        8.返回对象，可作为文本管理，可以使用以下方法处理
+            geturl() 返回URL地址
+            info()  返回页面信息，例如请求头
+            getcode() 返回HTTP状态码
+
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数的参数问题</title>
+</head>
+<body>
+<script>
+    /*
+        在函数调用时，不传递实参函数依然可以执行，形参返回undefiend
+        传递参数过多，多出的参数会忽略
+        在函数内部可以通过arguments属性获取所有实参值，数组类型
+
+     */
+    function demo(a,b) {
+        console.log('函数被调用了');
+        console.log(arguments);
+        for(i in arguments){
+            console.log(arguments[i])
+        }
+        // console.log(a,b);
+    }
+    var a=1;
+    var b=2;
+
+    demo(a,b);
+</script>
+</body>
+</html>

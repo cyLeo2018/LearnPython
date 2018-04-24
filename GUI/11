@@ -1,0 +1,126 @@
+Tkinter
+PyGTK
+wxPython
+PyQt
+
+Tkinter常用组件
+    按钮
+        Button 按钮
+        RadioButton 单选按钮
+        CheckButton 选择按钮
+        ListBox 列表框
+    文本输入
+        Entry 单行文本框
+        Text 多行文本框
+    标签
+        Label 标签，显示图片和文字
+        Message 标签，根据内容将文字换行
+    菜单
+        Menu 菜单
+        MenuButton 菜单按钮
+    滚动条
+        Scale 滑块
+        Scrollbar 滚动条
+    其他
+        Canvas 画布
+        Frame 框架
+        Toplevel 子窗口容器组件
+
+组件使用步骤
+    1.创建总面板
+    2.创建面板上的组件
+        2.1 指定组件的父组件以及依赖关系
+        2.2 设置组件属性
+        2.3 组件布局
+    3.总面板消息循环
+
+Button的属性：
+anchor 				设置按钮中文字的对其方式，相对于按钮的中心位置
+background(bg) 		设置按钮的背景颜色
+foreground(fg)		设置按钮的前景色（文字的颜色）
+borderwidth(bd)		设置按钮边框宽度
+cursor				设置鼠标在按钮上的样式
+command				设定按钮点击时触发的函数
+bitmap				设置按钮上显示的位图
+font				设置按钮上文本的字体
+width				设置按钮的宽度  (字符个数)
+height				设置按钮的高度  (字符个数)
+state				设置按钮的状态
+text				设置按钮上的文字
+image				设置按钮上的图片
+
+组件布局
+    组件的摆放方式
+    三种布局：
+        1. pack 按照方位布局
+            简单、代码量少、挨个摆放、默认从上到下，系统自动设置
+            side
+            fill
+            expande
+            ipadx
+            ipady
+            padx
+            pady
+
+        2. place 按照坐标布局
+        3. grid 网格布局
+            sticky
+
+消息机制
+    消息传递机制
+        自动发送事件/消息
+        消息由系统负责发送到队列
+        由相关组件进行绑定和设置
+        后端选择时间并作出反应
+    消息格式
+        <[modifier] type[detial]>
+        <Button-1>
+        <KeyPress-A>
+        <Control-Shift-KeyPress-A>
+        <F1>
+
+Tkinter的绑定
+    bind_all
+    bind_class
+    bind
+    unbind
+
+Entry
+    输入框
+    entry["show"] = "*"
+
+菜单
+    普通菜单
+    第一个Menu类定义的是parent
+    add_command添加菜单项，如果菜单是顶层菜单，则从左向右添加，否则就是下拉菜单
+        label 指定菜单项名称
+        command 点击后相应的调用函数
+        acceletor 快捷键
+        underline 下划线
+        menu 顶级菜单
+    级联菜单
+        add_cascade
+            menu
+        label
+        过程：
+            建立menu实例
+            add_command
+            add_cascade
+    弹出式菜单
+        上下文菜单
+        过程：
+            菜单
+            监听鼠标右键
+            调用Menu的pop方法
+        add_separator 添加分隔符
+    canvas画布
+        支持的组件
+            arc
+            bitmap
+            image(BitmapImage, PhotoImage)
+            line
+            oval
+            polygon
+            rectangle
+            text
+            window

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js中的函数定义方法</title>
+</head>
+<body>
+<script>
+    //1.使用function定义函数
+    // 这种方式优先级较高，在页面任意位置调用都可以
+    //函数不调用不会执行
+    // function demo() {
+    //     alert('函数被调用了')
+    // }
+    // demo();
+
+    //2.在表达式中定义函数(匿名函数)
+    // 匿名函数只能在函数体下方去调用
+
+    var dmeo1=function () {
+        alert('这是匿名函数');
+    };
+    console.log(dmeo1);
+    dmeo1();
+</script>
+</body>
+</html>
