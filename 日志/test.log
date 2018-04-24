@@ -1,0 +1,10 @@
+2018-04-24 23:02:02,806:DEBUG:This is a debug log.
+2018-04-24 23:02:02,806:INFO:This is a info log.
+2018-04-24 23:02:02,806:WARNING:This is a warning log.
+2018-04-24 23:02:02,806:ERROR:This is a error log.
+2018-04-24 23:02:02,806:CRITICAL:This is a critical log.
+2018-04-24 23:02:02,806:DEBUG:This is a error log.
+2018-04-24 23:02:02,806:INFO:This is a error log.
+2018-04-24 23:02:02,806:WARNING:This is a error log.
+2018-04-24 23:02:02,806:ERROR:This is a error log.
+2018-04-24 23:02:02,806:CRITICAL:This is a error log.
