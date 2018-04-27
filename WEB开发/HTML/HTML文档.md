@@ -1,30 +1,12 @@
-# 前端课程课件
-## 课程介绍
+# HTML概述
 
-```angular2html
-1.HTML           (常用标签          网页的基本结构)
-2.CSS            (常用样式          网页的显示效果)
-3.JavaScript     (用户交互效果       动态效果)
-4.jQuery         (JavaScript库     简化原生js操作)
-5.Ajax           (异步数据交互       在页面不刷新的情况下进行数据交互)
-6.BootStrap      (前端UI框架        快速搭建静态页面并支持不同设备)
-```
-
-## HTML概述
-
-### 一、什么是HTML
-
-HTML 是用来描述网页的一种语言。
-
-> 超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。
-
-> HTML 不是一种编程语言，而是一种标记语言
-
-> 标记语言是一套标记标签 (markup tag)
-
-> HTML 文档包含了HTML 标签及文本内容
-
->HTML文档也叫做 web 页面
+### 什么是HTML
+HTML 是用来描述网页的一种语言
+- 超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。
+- HTML 不是一种编程语言，而是一种标记语言
+- 标记语言是一套标记标签 (markup tag)
+- HTML 文档包含了HTML 标签及文本内容
+- HTML文档也叫做 web 页面
 
 ### 二、HTML是干嘛的
 
